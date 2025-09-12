@@ -45,6 +45,13 @@
                     <span class="icp-splitter">&nbsp;|&nbsp;</span><br class="icp-br"/>
                     <span class="icp">{{ . | safeHTML }}</span>
                 {{- end -}}
+
+                {{- /* Visitors Image */ -}}
+                {{- if .Site.Params.footer.visitorsImage -}}
+                <div style="text-align: center; margin-top: 10px; margin-bottom: 20px; width: 100%; display: flex; justify-content: center;">
+                    <img src="{{ .Site.Params.footer.visitorsImage }}" alt="visitors" style="max-width: 120px; height: auto;" />
+                </div>
+                {{- end -}}
             </div>
         </div>
     </footer>
